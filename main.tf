@@ -44,3 +44,14 @@ module "configuration-jamf-pro-categories" {
     jamfpro.jpro = jamfpro.jpro
   }
 }
+
+module "configuration-jamf-pro-computer-prestage" {
+  count                 = var.include_categories == true ? 1 : 0
+  source                = "./modules/configuration-jamf-pro-computer-prestage"
+  jamfpro_instance_url  = var.jamfpro_instance_url
+  jamfpro_client_id     = var.jamfpro_client_id
+  jamfpro_client_secret = var.jamfpro_client_secret
+  providers = {
+    jamfpro.jpro = jamfpro.jpro
+  }
+}

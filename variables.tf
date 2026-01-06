@@ -101,6 +101,11 @@ variable "include_smart_groups" {
   default = false
 }
 
+variable "include_computer_prestage" {
+  type    = bool
+  default = false
+}
+
 variable "random_string_boolean" {
   type    = bool
   default = false
