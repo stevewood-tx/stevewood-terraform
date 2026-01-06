@@ -12,23 +12,23 @@ terraform {
 
 ## Create Categories
 
-resource "jamfpro_category" "category_communication" {
-  name     = "Communication"
+resource "jamfpro_category" "category_applications" {
+  name     = "Applications"
   priority = 9
 }
 
-resource "jamfpro_category" "category_developer_tools" {
-  name     = "Developer Tools"
+resource "jamfpro_category" "category_utilities" {
+  name     = "Utilities"
   priority = 9
 }
 
-resource "jamfpro_category" "category_network" {
-  name     = "Network Security"
+resource "jamfpro_category" "category_zinstallers" {
+  name     = "zInstallers"
   priority = 9
 }
 
-resource "jamfpro_category" "category_printers" {
-  name     = "Printers"
+resource "jamfpro_category" "category_provisioning" {
+  name     = "Provisioning"
   priority = 9
 }
 
@@ -42,7 +42,17 @@ resource "jamfpro_category" "category_security_compliance" {
   priority = 9
 }
 
-resource "jamfpro_category" "category_uninstallers" {
-  name     = "Uninstallers"
+resource "jamfpro_category" "category_settings" {
+  name     = "Settings"
+  priority = 9
+}
+
+resource "jamfpro_category" "category_jamf_protect" {
+  name     = "Jamf Protect"
+  priority = 9
+}
+
+resource "jamfpro_category" "category_home_screen_layouts" {
+  name     = "Home Screen Layouts"
   priority = 9
 }

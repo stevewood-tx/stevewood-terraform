@@ -475,7 +475,7 @@ variable "include_rosetta" {
   default = false
 }
 
-variable "include_qol_smart_groups" {
+variable "include_smart_groups" {
   type    = bool
   default = false
 }
