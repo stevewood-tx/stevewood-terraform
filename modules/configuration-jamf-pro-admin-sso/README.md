@@ -1,1 +1,0 @@
-This module will enable Admin SSO using Jamf Account to enable new features in Jamf Pro.
