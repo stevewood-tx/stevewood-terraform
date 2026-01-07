@@ -120,3 +120,53 @@ resource "jamfpro_mobile_device_configuration_profile_plist" "aviation_gate_devi
     mobile_device_group_ids = [jamfpro_smart_mobile_device_group.aviation_gate_devices.id]
   }
 }
+
+resource "jamfpro_mobile_device_configuration_profile_plist" "default_homescreen_layout" {
+  name               = "Default Home Screen Layout"
+  description        = "Set the home screen layout for all devices."
+  deployment_method  = "Install Automatically"
+  level              = "Device Level"
+  category_id        = var.home_screen_layouts_category_id
+  redeploy_on_update = "Newly Assigned"
+  payloads           = file("${path.module}/support_files/default_homescreen_layout.mobileconfig")
+
+  scope {
+    all_mobile_devices  = true
+    all_jss_users       = false
+    mobile_device_group_ids = [jamfpro_smart_mobile_device_group.aviation_all_devices.id]
+  }
+}
+
+resource "jamfpro_mobile_device_configuration_profile_plist" "aviation_on_duty_pilot_homescreen" {
+  name               = "[Aviation] On Duty Pilot Home Screen"
+  description        = "Set the home screen layout for on duty pilot devices."
+  deployment_method  = "Install Automatically"
+  level              = "Device Level"
+  category_id        = var.home_screen_layouts_category_id
+  redeploy_on_update = "Newly Assigned"
+  payloads           = file("${path.module}/support_files/aviation_on_duty_pilot.mobileconfig")
+
+  scope {
+    all_mobile_devices  = false
+    all_jss_users       = false
+    #mobile_device_group_ids = [tonumber(jamfpro_smart_mobile_device_group.aviation_gate_devices.id)]
+    mobile_device_group_ids = [jamfpro_smart_mobile_device_group.aviation_pilot_devices.id]
+  }
+}
+
+resource "jamfpro_mobile_device_configuration_profile_plist" "aviation_mechanic_homescreen" {
+  name               = "[Aviation] Mechanic Home Screen"
+  description        = "Set the home screen layout for mechanic devices."
+  deployment_method  = "Install Automatically"
+  level              = "Device Level"
+  category_id        = var.home_screen_layouts_category_id
+  redeploy_on_update = "Newly Assigned"
+  payloads           = file("${path.module}/support_files/aviation_mechanic_devices.mobileconfig")
+
+  scope {
+    all_mobile_devices  = false
+    all_jss_users       = false
+    #mobile_device_group_ids = [tonumber(jamfpro_smart_mobile_device_group.aviation_gate_devices.id)]
+    mobile_device_group_ids = [jamfpro_smart_mobile_device_group.aviation_mechanic_devices.id]
+  }
+}

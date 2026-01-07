@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions Payload</string>
+			<key>PayloadIdentifier</key>
+			<string>EFB0AE45-7DEE-4356-8B1D-E186CC65DE40</string>
+			<key>PayloadOrganization</key>
+			<string>JAMF Software</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>EFB0AE45-7DEE-4356-8B1D-E186CC65DE40</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowListedAppBundleIDs</key>
+			<array>
+				<string>com.jamf.setup</string>
+				<string>com.apple.mobilegarageband</string>
+				<string>com.amazon.aiv.AIVApp</string>
+				<string>com.apple.Numbers</string>
+				<string>com.google.Gmail</string>
+				<string>com.microsoft.azureauthenticator</string>
+				<string>com.apple.mobilesafari</string>
+				<string>com.google.chrome.ios</string>
+				<string>com.jamf.devicehelper</string>
+				<string>com.apple.webapp</string>
+				<string>com.openai.chat</string>
+				<string>com.jamf.trust</string>
+				<string>com.jamf.return-to-service</string>
+				<string>aero.aviobook.store.aviobook-ng</string>
+				<string>com.apple.TestFlight</string>
+				<string>com.jamf.mobile-assist</string>
+				<string>com.jamfsoftware.selfservice</string>
+				<string>com.jamfsoftware.inhouse.blue</string>
+				<string>com.alk.copilot9namapviewer</string>
+				<string>com.aaronmaxim.ManagedView</string>
+			</array>
+			<key>whitelistedAppBundleIDs</key>
+			<array>
+				<string>com.jamf.setup</string>
+				<string>com.apple.mobilegarageband</string>
+				<string>com.amazon.aiv.AIVApp</string>
+				<string>com.apple.Numbers</string>
+				<string>com.google.Gmail</string>
+				<string>com.microsoft.azureauthenticator</string>
+				<string>com.apple.mobilesafari</string>
+				<string>com.google.chrome.ios</string>
+				<string>com.jamf.devicehelper</string>
+				<string>com.apple.webapp</string>
+				<string>com.openai.chat</string>
+				<string>com.jamf.trust</string>
+				<string>com.jamf.return-to-service</string>
+				<string>aero.aviobook.store.aviobook-ng</string>
+				<string>com.apple.TestFlight</string>
+				<string>com.jamf.mobile-assist</string>
+				<string>com.jamfsoftware.selfservice</string>
+				<string>com.jamfsoftware.inhouse.blue</string>
+				<string>com.alk.copilot9namapviewer</string>
+				<string>com.aaronmaxim.ManagedView</string>
+			</array>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string></string>
+	<key>PayloadDisplayName</key>
+	<string>[Aviation] Off Duty Pilot</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>8D2BA7E1-201F-4B42-A0E2-6DD84D74711B</string>
+	<key>PayloadOrganization</key>
+	<string>Jamf</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>8D2BA7E1-201F-4B42-A0E2-6DD84D74711B</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

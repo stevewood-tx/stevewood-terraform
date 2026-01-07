@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions Payload</string>
+			<key>PayloadIdentifier</key>
+			<string>264EBCB0-DE7F-4C5B-AE71-3E606B806F70</string>
+			<key>PayloadOrganization</key>
+			<string>JAMF Software</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>264EBCB0-DE7F-4C5B-AE71-3E606B806F70</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowListedAppBundleIDs</key>
+			<array>
+				<string>com.jamf.reset</string>
+				<string>com.comply365.mymobile365</string>
+				<string>com.foreflight.ForeFlightMobile</string>
+				<string>com.apple.TestFlight</string>
+				<string>com.microsoft.azureauthenticator</string>
+				<string>com.alk.copilot9namapviewer</string>
+				<string>com.microsoft.Office.Outlook</string>
+				<string>com.microsoft.skype.teams</string>
+				<string>com.microsoft.msedge</string>
+				<string>com.jamf.devicehelper</string>
+				<string>com.jamf.trust</string>
+				<string>com.apple.webapp</string>
+				<string>com.apple.mobilesafari</string>
+			</array>
+			<key>whitelistedAppBundleIDs</key>
+			<array>
+				<string>com.jamf.reset</string>
+				<string>com.comply365.mymobile365</string>
+				<string>com.foreflight.ForeFlightMobile</string>
+				<string>com.apple.TestFlight</string>
+				<string>com.microsoft.azureauthenticator</string>
+				<string>com.alk.copilot9namapviewer</string>
+				<string>com.microsoft.Office.Outlook</string>
+				<string>com.microsoft.skype.teams</string>
+				<string>com.microsoft.msedge</string>
+				<string>com.jamf.devicehelper</string>
+				<string>com.jamf.trust</string>
+				<string>com.apple.webapp</string>
+				<string>com.apple.mobilesafari</string>
+			</array>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Passcode Payload</string>
+			<key>PayloadIdentifier</key>
+			<string>6865BAF4-9BE9-437C-B6A9-836B910C1B28</string>
+			<key>PayloadOrganization</key>
+			<string>JAMF Software</string>
+			<key>PayloadType</key>
+			<string>com.apple.mobiledevice.passwordpolicy</string>
+			<key>PayloadUUID</key>
+			<string>6865BAF4-9BE9-437C-B6A9-836B910C1B28</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>forcePIN</key>
+			<true/>
+			<key>maxInactivity</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string></string>
+	<key>PayloadDisplayName</key>
+	<string>[Aviation] On Duty Pilot</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>F8CAC6EC-D291-4FA1-9FA2-4D25F498BF20</string>
+	<key>PayloadOrganization</key>
+	<string>Jamf</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>F8CAC6EC-D291-4FA1-9FA2-4D25F498BF20</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
