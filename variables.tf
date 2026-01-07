@@ -101,7 +101,17 @@ variable "include_smart_groups" {
   default = false
 }
 
-variable "include_computer_prestage" {
+variable "include_prestages" {
+  type    = bool
+  default = false
+}
+
+variable "include_computer_management" {
+  type    = bool
+  default = false
+}
+
+variable "include_aviation_mobile" {
   type    = bool
   default = false
 }

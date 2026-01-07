@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Passcode Payload</string>
+			<key>PayloadIdentifier</key>
+			<string>A6CA65EA-2842-47E2-99A7-8AB152FA7329</string>
+			<key>PayloadOrganization</key>
+			<string>JAMF Software</string>
+			<key>PayloadType</key>
+			<string>com.apple.mobiledevice.passwordpolicy</string>
+			<key>PayloadUUID</key>
+			<string>A6CA65EA-2842-47E2-99A7-8AB152FA7329</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>forcePIN</key>
+			<true/>
+			<key>maxInactivity</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>Restrictions Payload</string>
+			<key>PayloadIdentifier</key>
+			<string>F7B71253-4752-4F30-98E4-C857D6932889</string>
+			<key>PayloadOrganization</key>
+			<string>JAMF Software</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>F7B71253-4752-4F30-98E4-C857D6932889</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>allowListedAppBundleIDs</key>
+			<array>
+				<string>com.jamf.reset</string>
+				<string>com.comply365.mymobile365</string>
+				<string>com.foreflight.ForeFlightMobile</string>
+				<string>com.apple.TestFlight</string>
+				<string>com.microsoft.azureauthenticator</string>
+				<string>com.microsoft.msedge</string>
+				<string>com.jamf.devicehelper</string>
+				<string>com.jamf.trust</string>
+				<string>com.apple.webapp</string>
+				<string>com.microsoft.skype.teams</string>
+			</array>
+			<key>whitelistedAppBundleIDs</key>
+			<array>
+				<string>com.jamf.reset</string>
+				<string>com.comply365.mymobile365</string>
+				<string>com.foreflight.ForeFlightMobile</string>
+				<string>com.apple.TestFlight</string>
+				<string>com.microsoft.azureauthenticator</string>
+				<string>com.microsoft.msedge</string>
+				<string>com.jamf.devicehelper</string>
+				<string>com.jamf.trust</string>
+				<string>com.apple.webapp</string>
+				<string>com.microsoft.skype.teams</string>
+			</array>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string></string>
+	<key>PayloadDisplayName</key>
+	<string>[Aviation] Gate Agent</string>
+	<key>PayloadEnabled</key>
+	<true/>
+	<key>PayloadIdentifier</key>
+	<string>577550A1-E493-4EF6-B122-A407A05F0BED</string>
+	<key>PayloadOrganization</key>
+	<string>Jamf</string>
+	<key>PayloadRemovalDisallowed</key>
+	<true/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>577550A1-E493-4EF6-B122-A407A05F0BED</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

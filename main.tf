@@ -21,11 +21,11 @@ provider "jsc" {
   applicationsecret = var.jsc_applicationsecret
 }
 
-## Initialize common modules
+## Initialize Jamf Pro
 
-module "configuration-jamf-pro-smart-groups" {
+module "config-jamf-pro-smart-groups" {
   count                 = var.include_smart_groups == true ? 1 : 0
-  source                = "./modules/configuration-jamf-pro-smart-groups"
+  source                = "./modules/config-jamf-pro-smart-groups"
   jamfpro_instance_url  = var.jamfpro_instance_url
   jamfpro_client_id     = var.jamfpro_client_id
   jamfpro_client_secret = var.jamfpro_client_secret
@@ -34,9 +34,9 @@ module "configuration-jamf-pro-smart-groups" {
   }
 }
 
-module "configuration-jamf-pro-categories" {
+module "config-jamf-pro-categories" {
   count                 = var.include_categories == true ? 1 : 0
-  source                = "./modules/configuration-jamf-pro-categories"
+  source                = "./modules/config-jamf-pro-categories"
   jamfpro_instance_url  = var.jamfpro_instance_url
   jamfpro_client_id     = var.jamfpro_client_id
   jamfpro_client_secret = var.jamfpro_client_secret
@@ -45,12 +45,35 @@ module "configuration-jamf-pro-categories" {
   }
 }
 
-module "configuration-jamf-pro-computer-prestage" {
+module "config-jamf-pro-prestages" {
   count                 = var.include_categories == true ? 1 : 0
-  source                = "./modules/configuration-jamf-pro-computer-prestage"
+  source                = "./modules/config-jamf-pro-prestages"
   jamfpro_instance_url  = var.jamfpro_instance_url
   jamfpro_client_id     = var.jamfpro_client_id
   jamfpro_client_secret = var.jamfpro_client_secret
+  providers = {
+    jamfpro.jpro = jamfpro.jpro
+  }
+}
+
+module "config-jamf-pro-computer-management" {
+  count                 = var.include_computer_management == true ? 1 : 0
+  source                = "./modules/config-jamf-pro-computer-management"
+  jamfpro_instance_url  = var.jamfpro_instance_url
+  jamfpro_client_id     = var.jamfpro_client_id
+  jamfpro_client_secret = var.jamfpro_client_secret
+  providers = {
+    jamfpro.jpro = jamfpro.jpro
+  }
+}
+
+module "config-jamf-pro-aviation-mobile" {
+  count                 = var.include_computer_management == true ? 1 : 0
+  source                = "./modules/config-jamf-pro-aviation-mobile"
+  jamfpro_instance_url  = var.jamfpro_instance_url
+  jamfpro_client_id     = var.jamfpro_client_id
+  jamfpro_client_secret = var.jamfpro_client_secret
+  home_screen_layouts_category_id = module.config-jamf-pro-categories[0].home_screen_layouts_category_id
   providers = {
     jamfpro.jpro = jamfpro.jpro
   }

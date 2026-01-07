@@ -42,6 +42,10 @@ resource "jamfpro_category" "home_screen_layouts" {
   priority = 9
 }
 
+output "home_screen_layouts_category_id" {
+  value = jamfpro_category.home_screen_layouts  .id
+}
+
 resource "jamfpro_category" "network_settings" {
   name     = "Network Settings"
   priority = 9
